@@ -1,0 +1,37 @@
+.footer {
+  display: flex;
+  padding: 52px 156px;
+  justify-content: space-between;
+  background-color: #333038;
+  color: #fff;
+
+  &-heading {
+    text-transform: uppercase;
+  }
+
+  .important-links {
+    ul {
+      list-style: none;
+      margin-top: 20px;
+    }
+  }
+
+  .more-links {
+    ul {
+      list-style: none;
+      margin-top: 20px;
+    }
+  }
+
+  .social-links {
+    ul {
+      list-style: none;
+      margin-top: 8px;
+      display: flex;
+
+      li:not(:last-child) {
+        margin-right: 12px;
+      }
+    }
+  }
+}
