@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Button from '../Button';
 import './Header.scss';
 
 const Header = () => (
@@ -17,7 +18,7 @@ const Header = () => (
           <Link to="/myLearning">My Learning</Link>
         </li>
       </ul>
-      <button>Book Trial</button>
+      <Button>Book Trial</Button>
       <img src="" alt="" />
     </div>
   </header>

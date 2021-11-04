@@ -3,16 +3,34 @@
   padding: 16px 156px;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.95);
+  left: 0;
+  right: 0;
+  z-index: 1;
 
   .right-section {
     display: flex;
+    align-items: center;
 
     .links-list {
       list-style: none;
       display: flex;
 
+      a,
+      a:hover,
+      a:visited,
+      a:focus {
+        color: #000;
+        text-decoration: none;
+      }
+
       &-item {
         margin-right: 32px;
+
+        a {
+          white-space: nowrap;
+        }
       }
     }
   }
