@@ -15,8 +15,19 @@
     }
   }
 
+  .page-heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+  }
+
   .page-desc {
     margin-top: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.025em;
   }
 
   .separator {
@@ -30,7 +41,12 @@
       margin-top: 100px;
     }
 
-    .course-section-heading {}
+    .course-section-heading {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 45px;
+      letter-spacing: 0em;
+    }
   }
 
   .courses-list {
@@ -84,14 +100,27 @@
       }
     }
 
-    .desc-container-heading {}
+    .desc-container-heading {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 45px;
+      letter-spacing: 0em;
+    }
 
     .course-level {
       margin-top: 16px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.025em;
     }
 
     .course-desc {
       margin-top: 12px;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.025em;
     }
 
     .price-cta-container {
@@ -110,7 +139,19 @@
       margin-right: 16px;
     }
 
-    .price {}
+    .price {
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 38px;
+      letter-spacing: 0.025em;
+
+      .strike {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 23px;
+        text-decoration: line-through;
+      }
+    }
 
     .cta-container {
       display: flex;
@@ -124,6 +165,8 @@
 
   button {
     text-transform: capitalize;
-  };
+  }
+
+  ;
 
 }

@@ -1,13 +1,14 @@
 import React from 'react';
 import './Button.scss';
+import MuiButton from '@mui/material/Button';
 
 const Button = ({ className, children, ...props }) => (
-  <button
+  <MuiButton
     className={`btn${className ? ` ${className}` : ''}`}
     {...props}
   >
     {children}
-  </button>
+  </MuiButton>
 );
 
 export default Button

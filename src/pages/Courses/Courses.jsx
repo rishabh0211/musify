@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Button from '@mui/material/Button';
+import Button from '../../components/Button';
 
 import './Courses.scss';
 
@@ -30,7 +30,7 @@ const Courses = () => {
                     Course designed to help students gain a fundamental understanding of the theoretical and practical aspects of the guitar. All classes are personalized 1:1 coaching
                 </p>
                   <div className="price-cta-container">
-                    <p className="price">Course starting at Rs. 7999 Rs. 9999</p>
+                    <p className="price">Course starting at <strong>Rs. 7999</strong> <span className="strike">Rs. 9999</span> </p>
                     <div className="cta-container">
                       <Link to="course/id">
                         <Button className="view-details-btn" variant="outlined">View Details</Button>
@@ -53,7 +53,7 @@ const Courses = () => {
                     Course designed to help students get the most out of the course content with precise notes practice and demonstration. All classes are personalized 1:1 coaching.
                 </p>
                   <div className="price-cta-container">
-                    <p className="price">Course starting at Rs. 7999 Rs. 9999</p>
+                    <p className="price">Course starting at <strong>Rs. 7999</strong> <span className="strike">Rs. 9999</span> </p>
                     <div className="cta-container">
                       <Link to="course/id">
                         <Button className="view-details-btn" variant="outlined">View Details</Button>
@@ -76,7 +76,7 @@ const Courses = () => {
                     Course designed to help students get the most out of the course content with precise notes practice and demonstration. All classes are personalized 1:1 coaching.
                 </p>
                   <div className="price-cta-container">
-                    <p className="price">Course starting at Rs. 7999 Rs. 9999</p>
+                    <p className="price">Course starting at <strong>Rs. 7999</strong> <span className="strike">Rs. 9999</span> </p>
                     <div className="cta-container">
                       <Link to="course/id">
                         <Button className="view-details-btn" variant="outlined">View Details</Button>
@@ -106,7 +106,7 @@ const Courses = () => {
                     Course designed to help students gain a fundamental understanding of the theoretical and practical aspects of the guitar. All classes are personalized 1:1 coaching
                 </p>
                   <div className="price-cta-container">
-                    <p className="price">Course starting at Rs. 7999 Rs. 9999</p>
+                    <p className="price">Course starting at <strong>Rs. 7999</strong> <span className="strike">Rs. 9999</span> </p>
                     <div className="cta-container">
                       <Link to="course/id">
                         <Button className="view-details-btn" variant="outlined">View Details</Button>
@@ -129,7 +129,7 @@ const Courses = () => {
                     Course designed to help students get the most out of the course content with precise notes practice and demonstration. All classes are personalized 1:1 coaching.
                 </p>
                   <div className="price-cta-container">
-                    <p className="price">Course starting at Rs. 7999 Rs. 9999</p>
+                    <p className="price">Course starting at <strong>Rs. 7999</strong> <span className="strike">Rs. 9999</span> </p>
                     <div className="cta-container">
                       <Link to="course/id">
                         <Button className="view-details-btn" variant="outlined">View Details</Button>
@@ -152,7 +152,7 @@ const Courses = () => {
                     Course designed to help students get the most out of the course content with precise notes practice and demonstration. All classes are personalized 1:1 coaching.
                 </p>
                   <div className="price-cta-container">
-                    <p className="price">Course starting at Rs. 7999 Rs. 9999</p>
+                    <p className="price">Course starting at <strong>Rs. 7999</strong> <span className="strike">Rs. 9999</span> </p>
                     <div className="cta-container">
                       <Link to="course/id">
                         <Button className="view-details-btn" variant="outlined">View Details</Button>

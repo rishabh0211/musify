@@ -19,7 +19,7 @@ const Header = () => (
             <Link to="/myLearning">My Learning</Link>
           </li>
         </ul>
-        <Button>Book Trial</Button>
+        <Button className="book-trial-btn" variant="contained">Book Trial</Button>
         <img src="" alt="" />
       </div>
     </div>

@@ -46,7 +46,12 @@ const HomePage = () => {
             creative best in <br />
             your child
           </h2>
-          <Button className="book-trial-btn">Book Free Trial</Button>
+          <Button
+            variant="contained"
+            className="book-trial-btn"
+          >
+            Book Free Trial
+          </Button>
         </div>
       </div>
       <div className="why-section">
@@ -81,17 +86,17 @@ const HomePage = () => {
           <li className="courses-list-item">
             <img src="./images/guitar.png" alt="" />
             <h6 className="course-name">Guitar</h6>
-            <Button className="book-btn">Book Trial</Button>
+            <Button className="book-btn" variant="contained">Book Trial</Button>
           </li>
           <li className="courses-list-item">
             <img src="./images/western-vocal.png" alt="" />
             <h6 className="course-name">Western Vocals</h6>
-            <Button className="book-btn">Book Trial</Button>
+            <Button className="book-btn" variant="contained">Book Trial</Button>
           </li>
           <li className="courses-list-item">
             <img src="./images/eastern-vocal.png" alt="" />
             <h6 className="course-name">Eastern Vocals</h6>
-            <Button className="book-btn">Book Trial</Button>
+            <Button className="book-btn" variant="contained">Book Trial</Button>
           </li>
         </ul>
       </div>
@@ -133,10 +138,10 @@ const HomePage = () => {
                 aria-controls="panel1a-content"
                 id="panel1a-header"
               >
-                <p>{faq.question}</p>
+                <p className="faq-question">{faq.question}</p>
               </AccordionSummary>
               <AccordionDetails>
-                <p>{faq.answer}</p>
+                <p className="faq-answer">{faq.answer}</p>
               </AccordionDetails>
             </Accordion>
           ))}

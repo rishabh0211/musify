@@ -16,11 +16,18 @@
     }
   }
 
+  .page-heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+  }
+
   .page-desc {
     margin-top: 16px;
     font-size: 20px;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 30px;
     letter-spacing: 0.025em;
 
     @media screen and (max-width: 767px) {
@@ -42,6 +49,13 @@
   }
 
   .about-course-section {
+    .about-heading {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 45px;
+      letter-spacing: 0em;
+    }
+
     .about-list {
       list-style: none;
       margin-top: 48px;
@@ -118,6 +132,13 @@
         width: 100%;
       }
 
+      .curriculum-heading {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 45px;
+        letter-spacing: 0em;
+      }
+
       .curriculum-list {
         list-style: none;
       }
@@ -129,6 +150,13 @@
 
         &:not(:last-child) {
           border-bottom: 1px solid rgba(0, 0, 0, 0.29);
+        }
+
+        p {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 30px;
+          letter-spacing: 0em;
         }
       }
     }

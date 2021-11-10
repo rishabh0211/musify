@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import Button from '@mui/material/Button';
+import Button from '../../components/Button';
 
 import './CourseDetails.scss';
 
@@ -20,7 +20,7 @@ const CourseDetails = () => {
           <ul className="about-list">
             <li className="about-list-item">
               <p className="about-list-item-key">12 weeks</p>
-              <p className="about-list-item-value">total durationn</p>
+              <p className="about-list-item-value">total duration</p>
             </li>
             <li className="about-list-item">
               <p className="about-list-item-key">1 class</p>
