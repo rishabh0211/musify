@@ -38,7 +38,7 @@ const HomePage = () => {
   return (
     <div className="home-container">
       <div className="hero-section">
-        <img className="hero-img" src="./images/hero.png" />
+        <img className="hero-img" src="./images/hero.png" alt="" />
         <div className="hero-text">
           <h3 className="hero-text-heading">live online music classes</h3>
           <h2 className="hero-text-para">
@@ -53,23 +53,23 @@ const HomePage = () => {
         <h2 className="why-heading">Why <span className="why-musify">musify?</span></h2>
         <ul className="why-list">
           <li className="why-list-item">
-            <img src="./images/personalised-icon.png" />
+            <img src="./images/personalised-icon.png" alt="" />
             <p><strong>Personalised </strong>1:1<br />classes</p>
           </li>
           <li className="why-list-item">
-            <img src="./images/recording-icon.png" />
+            <img src="./images/recording-icon.png" alt="" />
             <p><strong>Recordings </strong>for every<br />class provided</p>
           </li>
           <li className="why-list-item">
-            <img src="./images/feedback-icon.png" />
+            <img src="./images/feedback-icon.png" alt="" />
             <p><strong>Feedback </strong>sent to<br />parents on the <br />progress every week</p>
           </li>
           <li className="why-list-item">
-            <img src="./images/certification-icon.png" />
+            <img src="./images/certification-icon.png" alt="" />
             <p><strong>Certification </strong><br />provided to all<br />courses</p>
           </li>
           <li className="why-list-item">
-            <img src="./images/calendar-icon.png" />
+            <img src="./images/calendar-icon.png" alt="" />
             <p><strong>Reschedule </strong>classes<br />as per your<br />convenience</p>
           </li>
         </ul>
@@ -79,17 +79,17 @@ const HomePage = () => {
         <p className="courses-desc">Progressive course content with certification, organized course work, additional tutorial<br /> videos and class recordings.</p>
         <ul className="courses-list">
           <li className="courses-list-item">
-            <img src="./images/guitar.png" />
+            <img src="./images/guitar.png" alt="" />
             <h6 className="course-name">Guitar</h6>
             <Button className="book-btn">Book Trial</Button>
           </li>
           <li className="courses-list-item">
-            <img src="./images/western-vocal.png" />
+            <img src="./images/western-vocal.png" alt="" />
             <h6 className="course-name">Western Vocals</h6>
             <Button className="book-btn">Book Trial</Button>
           </li>
           <li className="courses-list-item">
-            <img src="./images/eastern-vocal.png" />
+            <img src="./images/eastern-vocal.png" alt="" />
             <h6 className="course-name">Eastern Vocals</h6>
             <Button className="book-btn">Book Trial</Button>
           </li>
@@ -98,25 +98,28 @@ const HomePage = () => {
       <div className="reviews-section">
         <h2 className="reviews-heading">Parent's Voices</h2>
         <div className="reviews-list-container">
-          <img src="./images/reviews-list-bg.png" />
+          <img className="bg-img" src="./images/reviews-list-bg.png" alt="" />
           <ul className="reviews-list">
             <li className="review-item">
-              <img className="review-comma" src="./images/inverted-comma.png" />
+              <img className="review-comma" src="./images/inverted-comma.png" alt="" />
               <p className="review-text">Well-rounded holistic development of your child through an integrated learning model. Well-rounded holistic development.</p>
               <Rating name="read-only" value={5} readOnly size="small" />
               <p className="reviewer-name">Hamir</p>
+              <img className="reviewer-img" src="./images/reviewer.png" alt="" />
             </li>
             <li className="review-item">
-              <img className="review-comma" src="./images/inverted-comma.png" />
+              <img className="review-comma" src="./images/inverted-comma.png" alt="" />
               <p className="review-text">Well-rounded holistic development of your child through an integrated learning model. Well-rounded holistic development.</p>
               <Rating name="read-only" value={5} readOnly size="small" />
               <p className="reviewer-name">Sheetal</p>
+              <img className="reviewer-img" src="./images/reviewer.png" alt="" />
             </li>
             <li className="review-item">
-              <img className="review-comma" src="./images/inverted-comma.png" />
+              <img className="review-comma" src="./images/inverted-comma.png" alt="" />
               <p className="review-text">Well-rounded holistic development of your child through an integrated learning model. Well-rounded holistic development.</p>
               <Rating name="read-only" value={5} readOnly size="small" />
               <p className="reviewer-name">Bandra</p>
+              <img className="reviewer-img" src="./images/reviewer.png" alt="" />
             </li>
           </ul>
         </div>

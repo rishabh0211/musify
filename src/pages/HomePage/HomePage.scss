@@ -53,9 +53,25 @@
       width: 100%;
       max-width: 900px;
       margin: 80px auto 0;
+
+      @media screen and (max-width: 767px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-row-gap: 20px;
+      }
     }
 
     .why-list-item {
+      @media screen and (max-width: 767px) {
+        justify-self: center;
+        text-align: center;
+
+        &:last-child {
+          grid-column: span 2;
+        }
+      }
+
       img {
         height: 91px;
       }
@@ -68,6 +84,11 @@
     background-position: top;
     text-align: center;
     padding: 100px 0;
+
+    @media screen and (max-width: 767px) {
+      background-image: none;
+      background: linear-gradient(253.45deg, rgb(255 153 0 / 52%) 60.33%, rgba(241, 241, 241, 0.2485) 112.36%);
+    }
 
     .courses-heading {
       font-size: 28px;
@@ -84,6 +105,12 @@
       width: calc(100% - 40px);
       max-width: calc(365*3px + 3*20px);
       margin: 100px auto;
+
+      @media screen and (max-width: 767px) {
+        margin: 40px auto;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     .courses-list-item {
@@ -91,6 +118,15 @@
       background: #fff;
       border-radius: 12px;
       width: calc(100%/3 - 20px);
+
+      @media screen and (max-width: 767px) {
+        width: auto;
+        max-width: 265px;
+
+        &:not(:first-child) {
+          margin-top: 32px;
+        }
+      }
 
       img {
         max-width: 100%;
@@ -114,6 +150,11 @@
     background-repeat: no-repeat;
     padding-bottom: 220px;
 
+    @media screen and (max-width: 767px) {
+      background-image: none;
+      padding-bottom: 80px;
+    }
+
     .reviews-heading {
       font-size: 28px;
       text-align: center;
@@ -125,6 +166,14 @@
       position: relative;
       display: flex;
       justify-content: center;
+
+      @media screen and (max-width: 767px) {
+        margin-top: 50px;
+
+        .bg-img {
+          display: none;
+        }
+      }
 
       img {
         max-width: 100%;
@@ -138,6 +187,13 @@
       transform: translateY(-60%);
       list-style: none;
       padding: 0 12px;
+
+      @media screen and (max-width: 767px) {
+        flex-direction: column;
+        position: relative;
+        transform: translateY(0px);
+        top: auto;
+      }
     }
 
     .review-item {
@@ -147,11 +203,21 @@
       padding: 36px;
       text-align: left;
       position: relative;
-      width: calc(100%/3 - 40px);
-      max-width: 200px;
+      // width: calc(100%/3 - 40px);
+      max-width: 320px;
+
+      @media screen and (max-width: 767px) {
+        &:not(:first-child) {
+          margin-top: 92px;
+        }
+      }
 
       &:not(:last-child) {
         margin-right: 28px;
+
+        @media screen and (max-width: 767px) {
+          margin-right: 0;
+        }
       }
 
       .review-comma {
@@ -175,6 +241,13 @@
         font-size: 20px;
         font-weight: 500;
       }
+    }
+
+    .reviewer-img {
+      position: absolute;
+      top: 100%;
+      left: 100%;
+      transform: translate(-130%, -50%);
     }
   }
 

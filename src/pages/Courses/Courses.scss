@@ -1,0 +1,129 @@
+.courses-page {
+  background-image: url('../../images/decoration.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  padding: 120px 0;
+
+  .courses-inner-container {
+    max-width: 1608px;
+    width: calc(100% - 312px);
+    margin: auto;
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      padding: 0 24px;
+    }
+  }
+
+  .page-desc {
+    margin-top: 16px;
+  }
+
+  .separator {
+    border-top: solid 8px #EF6C00;
+    border-radius: 8px;
+    margin: 40px 0 100px;
+  }
+
+  .course-section {
+    &:not(:first-child) {
+      margin-top: 100px;
+    }
+
+    .course-section-heading {}
+  }
+
+  .courses-list {
+    list-style: none;
+    width: calc(100% - 100px);
+    margin: 52px auto 0;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
+
+  .course-list-item {
+    display: flex;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    &:not(:first-child) {
+      margin-top: 60px;
+    }
+
+    &.guitar {
+      background: linear-gradient(253.45deg, rgba(254, 185, 82, 0.35) 60.33%, rgba(241, 241, 241, 0.2485) 112.36%);
+    }
+
+    &.w-vocals {
+      background: linear-gradient(253.29deg, rgba(112, 117, 181, 0.35) 61.01%, rgba(241, 241, 241, 0.2485) 112.67%);
+    }
+
+    &.e-vocals {
+      background: linear-gradient(254.02deg, rgba(238, 70, 105, 0.35) 59.88%, rgba(241, 241, 241, 0.2485) 111.24%);
+    }
+
+    .course-img {
+      width: 25%;
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+    }
+
+    .desc-container {
+      padding: 24px;
+
+      @media screen and (max-width: 767px) {
+        padding: 16px;
+      }
+    }
+
+    .desc-container-heading {}
+
+    .course-level {
+      margin-top: 16px;
+    }
+
+    .course-desc {
+      margin-top: 12px;
+    }
+
+    .price-cta-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 18px;
+
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+        align-items: start;
+      }
+    }
+
+    .view-details-btn {
+      margin-right: 16px;
+    }
+
+    .price {}
+
+    .cta-container {
+      display: flex;
+      flex-shrink: 0;
+
+      @media screen and (max-width: 992px) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  button {
+    text-transform: capitalize;
+  };
+
+}

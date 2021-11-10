@@ -1,0 +1,216 @@
+.course-details-page {
+  padding: 120px 0 40px;
+
+  @media screen and (max-width: 767px) {
+    padding: 100px 0 40px;
+  }
+
+  .course-details-container {
+    max-width: 1608px;
+    width: calc(100% - 312px);
+    margin: auto;
+
+    @media screen and (max-width: 1200px) {
+      width: 100%;
+      padding: 0 24px;
+    }
+  }
+
+  .page-desc {
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+
+    @media screen and (max-width: 767px) {
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.025em;
+    }
+  }
+
+  .separator {
+    border-top: solid 8px #EF6C00;
+    border-radius: 8px;
+    margin: 40px 0 100px;
+
+    @media screen and (max-width: 767px) {
+      margin: 40px 0;
+    }
+  }
+
+  .about-course-section {
+    .about-list {
+      list-style: none;
+      margin-top: 48px;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+
+      @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 32px;
+      }
+
+      .about-list-item {
+        width: 100%;
+        text-align: center;
+
+        &:not(:last-child) {
+          border-right: 1px solid rgba(0, 0, 0, 0.25);
+
+          @media screen and (max-width: 767px) {
+            border: 0;
+          }
+        }
+      }
+
+      .strike {
+        text-decoration: line-through;
+      }
+
+      .about-list-item-key {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 1.5;
+        color: #FF8A00;
+
+        @media screen and (max-width: 992px) {
+          font-size: 24px;
+        }
+      }
+
+      .about-list-item-value {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.5;
+        letter-spacing: 0em;
+
+        @media screen and (max-width: 992px) {
+          font-family: Poppins;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+
+      }
+    }
+  }
+
+  .curriculum-info-cards-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      margin-top: 52px;
+    }
+
+    .curriculum-container {
+      width: calc(50% - 52px);
+
+      @media screen and (max-width: 992px) {
+        width: calc(50% - 12px);
+      }
+
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+
+      .curriculum-list {
+        list-style: none;
+      }
+
+      .curriculum-list-item {
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.29);
+        }
+      }
+    }
+
+    .info-cards-container {
+      width: calc(50% - 32px);
+
+      @media screen and (max-width: 992px) {
+        width: calc(50% - 12px);
+      }
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+
+      .book-trial-card,
+      .buy-course-card {
+        background: #FF98004D;
+        padding: 24px 40px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media screen and (max-width: 992px) {
+          padding: 20px;
+        }
+
+        .left-section-heading {
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 1.5;
+        }
+
+        .left-section-desc {
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 1.5;
+          color: rgba(0, 0, 0, 0.65);
+          margin-top: 4px;
+        }
+
+        .card-cta {
+          margin-left: 24px;
+          flex-shrink: 0;
+        }
+      }
+
+      .buy-course-card {
+        margin-top: 32px;
+
+        @media screen and (max-width: 992px) {
+          margin-top: 16px;
+        }
+      }
+
+      .other-cards {
+        display: flex;
+        margin-top: 32px;
+        justify-content: space-between;
+
+        @media screen and (max-width: 992px) {
+          margin-top: 16px;
+        }
+
+        .easy-refund-card,
+        .reschedule-card {
+          background: #FF98004D;
+          padding: 24px 40px;
+          border-radius: 5px;
+          width: calc(50% - 16px);
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 1.5;
+
+          @media screen and (max-width: 992px) {
+            padding: 20px;
+            width: calc(50% - 6px);
+          }
+        }
+      }
+    }
+  }
+
+}
